@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+
+\newcommand{\numpy}{{\tt numpy}}    % tt font for numpy
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\topmargin -1in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+
+\begin{document}
+
+% ========== Edit your name here
+\author{Ivan Krukov}
+\title{Advanced Computer Graphics: River Simulation}
+\maketitle
+
+\medskip
+
+\section{Description} 
+
+Fluid Simulation describes the process of simulating and rendering realistic fluid mechanics through the usage of a particle system. My final project will primarily focus on online rendering of fluids to create a realistic moving river(utilizing Navier-Stokes equations and the OpenGL Compute Shader) that reflects/refracts its surroundings(utilizing refraction mapping). If time permits, I will also experiment with creating water caustics(The shimmering effect seen when light gets deformed when going through a fluid) and creating separate effects based on if the camera is submerged in water. Another potential extension would be to apply procedural texture techniques using Worley noise on the surface of the fluid to create the appearance of river foam. 
+
+\section{Uses} 
+
+The techniques described in this project are best applied in the domain of computer animation for CGI/movies as well as for creating realistic bodies of water and rivers in the domain of game development which can be interacted with. 
+
+
+\section{Challenges}
+
+The primary challenges that are envisioned with this project include:
+
+\begin{itemize}
+	\item Learning about and implementing compute shaders
+
+	\item Correctly Implementing the math-heavy techniques involved in Navier-Stokes equations which require an extensive background knowledge in calculus.
+
+	\item Compiling together and implementing techniques described mathematically/conceptually in research into GLSL.
+
+	\item Effectively debugging and integrating multiple shader techniques
+
+	\item Ensuring that code is version controlled and organized so that bugs are easily revertible and a working final project can be delivered in the event the stretch goals are unfinished by the deadline.
+
+\end{itemize}
+
+\section{Examples in practice}
+
+Many of the techniques mentioned in the project description are used to create realistic looking water in video games and films. The most visible example of 3D fluid simulation can be seen in Pixar's \textit{Finding Nemo}, where particle systems were utilized for the simulation of ocean waves along with the lighting effects seen with water caustics to create a more realistic underwater lighting environment. The Navier Stokes equations are also used outside of a computer graphics context in the field of Computational Fluid Dynamics looking at problems such as the aerodynamic profile of an aircraft. 
+
+\section{References} 
+
+http://developer.download.nvidia.com/books/HTML/gpugems/gpugems\_ch38.html
+
+\noindent https://download.nvidia.com/developer/presentations/GDC\_2004/HLSL\_WaterVTF.pdf
+
+\noindent https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models
+
+\noindent http://www.rhythmiccanvas.com/research/papers/worley.pdf
+
+\noindent https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-2-rendering-water-caustics
+
+\noindent Iglesias, A., 2004, Computer graphics for water modeling and rendering: a survey: Future Generation Computer Systems, v. 20, no. 8, p. 1355–1374, doi:10.1016/j.future.2004.05.026.
+
+\noindent Kopecky, Kenneth, and Eliot H. Winer. “Real-Time Water Simulation and Rendering Using Features of the Latest OpenGL-Capable Graphics Hardware”. ProQuest Dissertations Publishing, 2007.
+
+http://search.proquest.com/docview/304861253/.
+
+\noindent “Pixar Granted United States Patent for Wave Modeling for Computer-Generated Imagery Using Intersection Prevention on Water Surfaces.” Global IP News: Software Patent News. Pedia Content Solutions Pvt. Ltd., February 10, 2015.
+
+
+\end{document}
+\grid
+\grid
